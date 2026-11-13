@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            id="com.github.vvi3ard.dt.linkifier.preferences.LinkifierPreferencePage"
+            name="%preferencePageName"
+            class="com.github.vvi3ard.dt.linkifier.preferences.LinkifierPreferencePage">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.github.vvi3ard.dt.linkifier.preferences.LinkifierPreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="com.github.vvi3ard.dt.linkifier.Startup">
+      </startup>
+   </extension>
+   <extension
+         point="org.eclipse.ui.workbench.texteditor.hyperlinkDetectors">
+      <hyperlinkDetector
+            id="com.github.vvi3ard.dt.linkifier.detector"
+            name="Issue Tracker Hyperlink Detector"
+            class="com.github.vvi3ard.dt.linkifier.detector.IssueHyperlinkDetector"
+            targetId="org.eclipse.ui.DefaultTextEditor">
+      </hyperlinkDetector>
+   </extension>
+</plugin>

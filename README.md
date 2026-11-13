@@ -1,4 +1,5 @@
 # 1C:EDT Universal Issue Linkifier
+<img width="841" height="703" alt="image" src="https://github.com/user-attachments/assets/938a3ca0-c41e-4225-9bb3-18e7c14f8a66" />
 
 Универсальный плагин для **1C:Enterprise Development Tools (1C:EDT)** и **Eclipse**, превращающий номера задач и тикетов в интерактивные кликабельные гиперссылки во всплывающих окнах **Git Blame / Quick Diff**, в редакторах кода (модули BSL, XML, Markdown, Gherkin сценарии) и панелях Git.
 
